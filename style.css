@@ -190,15 +190,13 @@ h3 {
     text-align: center;
 }
 
-.world {
+.world{
     display: flex;
-    position: relative;
-    transform: translate(-50%, -50%);
-    left: 60%;
-    bottom: 50%;
-    z-index: 1;
-    right: 0%;
+    Position: absolute;
+    transform: translate( -50%, -50%);
+    left: 80%;
 }
+
 .faq {
     margin-top: 30px;
     font-size: medium;
