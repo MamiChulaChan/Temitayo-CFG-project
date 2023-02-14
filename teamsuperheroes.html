@@ -9,28 +9,25 @@
 </head>
 
 <body>
-    <!--login & signup page-->
+    <!--menu-->
     <div class="main">
-        <div class="login">
-            <a href="login.html">Login</a>
-            <a href="signup.html">Signup</a>
-        </div>
-
-        <!--Dropdown bars-->
         <div class="company">
             <div class="navbar">
-                <span><i class="fa fa-bars"></i></span>
-                <div class="navbar-items">
-                        <a href="about.html">About</a>
-                        <a href="messages.html">Message
-                        </a>
-                        <a href="mailto:teamsupersheroes@cfg.com">Contact Us</a>
-                </div>
+                <span onclick="myFunction()"><i class="fa fa-bars"></i></span>
                 <div class="brand">
                     <h3>
                         <p style="color: black;"> Super Sheroes </p>
                     </h3><img src="./images/logs.png" width="100%" height="100%">
                 </div>
+                <div id="myLinks" class="navbar-items">
+                        <a href="about.html">About</a>
+                        <a href="messages.html">Message
+                        </a>
+                        <a href="mailto:teamsupersheroes@cfg.com">Contact Us</a>   
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Signup</a>
+                        
+                </div>     
             </div>
 
             <!-- search-->
@@ -101,4 +98,14 @@
         </footer>
     </div>
 </body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script> 
 </html>

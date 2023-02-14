@@ -1,7 +1,7 @@
 .main {
     position: relative;
     padding: 20px;
-    background: lightcoral;
+    background: #F4F2F3;
     color: white;
 }
 
@@ -32,7 +32,7 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 8px 0;
 }
 
 .company .navbar span {
@@ -40,7 +40,7 @@ h3 {
 }
 
 .company .navbar .fa-bars {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bolder;
     cursor: pointer;
     color: gray;
@@ -79,19 +79,19 @@ h3 {
 }
 
 .login {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     font-size: medium;
     width: 10%;
-    margin: auto 0 auto auto !important;
+    margin: auto 0 auto auto !important; */
 }
 
 .login a {
-    text-decoration: none;
+    /* text-decoration: none;
     background: rgba(1, 16, 1, 0.556);
     padding: 5px 10px;
     color: white;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 
 #form {
@@ -141,7 +141,10 @@ h3 {
 .image-container {
     width: 500px;
     height: 700px;
-    object-fit: contain;
+}
+
+.image-container img {
+    object-fit: cover;
 }
 
 .image-fluid {
@@ -181,6 +184,10 @@ h3 {
     font-size: 25px;
     color: #000;
     text-align: center;
+}
+.contacts i {
+    color: black;
+    margin-right: 10px;
 }
 
 .contact-email{
