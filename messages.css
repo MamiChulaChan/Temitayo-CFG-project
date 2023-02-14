@@ -1,0 +1,68 @@
+.message-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    width: 50%;
+    position: relative;
+    align-content: center;
+    margin: 0 auto;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+  
+/* Avatar image */
+img.avatar {
+    width: 20%;
+    border-radius: 3%;
+}
+
+.message-form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+}
+
+.message-input-group{
+    width: 100%;
+    padding: 0 0 15px 0;
+}
+
+.message-form-control{
+    width: 100%;
+    padding: 15px;
+}
+
+.message-btn-primary:hover {
+    color: beige;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.message-btn-primary:focus,
+.message-btn-primary.focus {
+    color: beige;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 2px rgba(38, 143, 255, 0.5);
+}
+
+.message-btn-lg,
+.message-btn-group-lg>.message-btn {
+    padding: 4px 7px;
+    font-size: medium;
+    line-height: 0.5;
+    border-radius: 7px;
+}
+
+.message-btn {
+    width: 100%;
+    padding: 15px;
+}

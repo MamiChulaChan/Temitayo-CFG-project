@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box
+  }
+  
+  /* Add padding to containers */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  /* Full-width input fields */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: cornsilk;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #333;
+    margin-bottom: 25px;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+
+   /* Avatar image */
+   img.avatar {
+    width: 20%;
+    border-radius: 3%;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: limegreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: orange;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn,
+  .signupbtn {
+    float: left;
+    width: 100%;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* The "account" text */
+  span.account {
+    text-align: center;
+  }
+  
+  .backbtn {
+    padding: 10px;
+  }
+  
+  .backbtn a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #error {
+    display: none;
+    color: red;
+    margin-bottom: 16px;
+    border: 1px solid orangered;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* PHONE VERSION */
+  @media screen and (min-width: 320px) {
+    h1 {
+      color: blue;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      font-size: small;
+    }
+  
+    .container p {
+      font-size: small;
+    }
+  
+    small {
+      font-size: 11px;
+      color: orangered;
+    }
+  
+    #error {
+      font-size: small;
+    }
+  
+    span.account {
+      font-size: small;
+    }
+  }
+  
+  /* TABLET VERSION */
+  @media screen and (min-width: 768px) {
+    h1 {
+      color: green;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      font-size: medium;
+    }
+  
+    .container p {
+      font-size: medium;
+    }
+  
+    small {
+      font-size: 11px;
+      color: orangered;
+    }
+  
+    #error {
+      font-size: medium;
+    }
+  
+    span.account {
+      font-size: medium;
+    }
+  }
+  
+  /* DESKTOP VERSION */
+  @media screen and (min-width: 980px) {
+    h1 {
+      color: black;
+    }
+  
+    .container {
+      width: 80%;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      font-size: medium;
+      padding: 30px 20px;
+    }
+  
+    .container p {
+      font-size: medium;
+    }
+  
+    small {
+      font-size: 11px;
+      color: orangered;
+    }
+  
+    #error {
+      font-size: medium;
+    }
+  
+    span.account {
+      font-size: medium;
+    }
+  }

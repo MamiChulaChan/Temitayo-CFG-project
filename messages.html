@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Message form</title>
+        <link href="messages.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="imgcontainer">
+            <p style="color: black;"> Super Sheroes </p>
+            <img src="./images/logs.png" alt="Super-Sheroes" class="avatar">
+        </div>
+
+        <div class="message-body">
+        <h3 class="message">Contact us</h3>
+
+        <form class="message-form-class">
+        <div class="message-form-group">
+            <label for="Name" class="message-label">Your name</label>
+            <div class="message-input-group">
+                <input type="text" placeholder="Enter Name" name="Name" class="message-form-control" required>
+            </div>
+        </div>
+
+        <div class="message-form-group">
+            <label for="Email" class="message-label">Your email address</label>
+            <div class="message-input-group">
+                <input type="email" placeholder="Enter Email" name="Email" class="message-form-control" required>
+            </div>
+        </div>
+
+        <div class="message-form-group">
+            <label for="Message" class="message-label">Your message</label>
+            <div class="message-input-group">
+                <textarea id="Message" name="Message" class="message-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="message-form-group">
+            <button type="submit" id="message-button" class="message-btn message-btn-primary message-btn-lg message-btn-block">Send Message</button>
+        </div>
+        </form>
+        </div>
+
+    </body>
+</html>

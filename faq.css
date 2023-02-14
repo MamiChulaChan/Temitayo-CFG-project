@@ -1,0 +1,22 @@
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: auto;
+    font-family: Georgia;
+    font-size: medium;
+}
+  
+/* Avatar image */
+img.avatar {
+    width: 10%;
+    border-radius: 3%;
+}
+
+/*background page*/
+.story {
+    font-family: Georgia;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}

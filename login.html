@@ -1,0 +1,110 @@
+<!Doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="login.css">
+  <script src="https://kit.fontawesome.com/4906f6df77.js" crossorigin="anonymous"></script>
+  <title>Team Hero - Login Account</title>
+</head>
+
+<body>
+  <div class="backbtn"><i class="fa fa-home"></i> <a href="index.html">Home</a></div>
+
+  <form action="#" method="post">
+
+    <div class="imgcontainer">
+      <p style="color: black;"> Super Sheroes </p>
+      <img src="./images/logs.png" alt="Super-Sheroes" class="avatar">
+    </div>
+
+    <div class="container">
+      <span id="error" style="text-align: center;"></span>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <button type="submit" id="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+      <div style="display:flex; flex-direction:column;">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="account">I don't have an account? <a href="signup.html">Create Account!</a></span>
+      </div>
+    </div>
+  </form>
+</body>
+<script type="text/javascript">
+
+  (function () {
+    // Login input validation
+    // access the username input dom element
+    let uname = document.getElementById('uname');
+    // access the password input dom element
+    let psw = document.getElementById('psw');
+    // access the error input dom element
+    let error = document.getElementById('error');
+    // submit button handler
+    let submit = document.getElementById('submit');
+
+    // ==================================================
+    // simple event listener for user input
+    uname.addEventListener('input', function (e) {
+      if (e.target.value.length <= 4) {
+        // show the error message on value less than 5 length.
+        error.style.display = 'block';
+        // error message
+        error.textContent = 'username not complete!'
+      } else {
+        // hides the error message on value higher than 4 length.
+        error.style.display = 'none';
+      }
+      if (e.target.value === '') {
+        // hides the error message on empty input value
+        error.style.display = 'none';
+      }
+      if (e.target.value.match(/^[0-9]/)) {
+        // set the username value to empty string when number leads a username
+        e.target.value = '';
+        // hides the error message
+        error.style.display = 'none';
+      }
+    })
+
+    // ====================================================
+    // simple event listener for user input
+    psw.addEventListener('input', function (e) {
+
+      if (e.target.value.length <= 5) {
+        error.style.display = 'block';
+        error.textContent = 'incorrect password!'
+      }
+      else {
+        error.style.display = 'none';
+      }
+    });
+
+    // ===================================================
+    // submit button handler
+    submit.addEventListener('click', function (e) {
+      if (uname.value == "" && psw.value == "") {
+        error.style.display = 'block';
+        error.textContent = 'username and password cannot be empty!';
+      }
+      else if (uname.value == "") {
+        error.style.display = 'block';
+        error.textContent = 'username cannot be empty!';
+      }
+      else if (psw.value == "") {
+        error.style.display = 'block';
+        error.textContent = 'password cannot be empty!';
+      }
+    })
+  }());
+
+</script>
+
+</html>
